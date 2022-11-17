@@ -9,22 +9,22 @@ wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 }
 
 add_action('init', function() {
-  register_post_type('meubelbak',
+  register_post_type('furniture bin',
   [
       'public' => true,
       'labels' => [
-      'name' => 'Meubelbakken',
-      'singular_name' => 'Meubelbak',
-      'add_new_item' => 'Add New Meubelbak',
-      'edit_item' => 'Edit Meubelbak',
-      'new_item' => 'New Meubelbak',
-      'view_item' => 'View Meubelbak',
-      'view_items' => 'View Meubelbakken',
-      'search_items' => 'Search Meubelbakken'
+      'name' => 'Furniture bins',
+      'singular_name' => 'Furniture bin',
+      'add_new_item' => 'Add New Furniture bin',
+      'edit_item' => 'Edit Furniture bin',
+      'new_item' => 'New Furniture bin',
+      'view_item' => 'View Furniture bin',
+      'view_items' => 'View Furniture bins',
+      'search_items' => 'Search Furniture bins'
   ],
       'show_in_graphql' => true,
-      'graphql_single_name' => 'meubelbak',
-      'graphql_plural_name' => 'meubelbakken',
+      'graphql_single_name' => 'furniture bin',
+      'graphql_plural_name' => 'furniture bins',
   ]);
 });
 
